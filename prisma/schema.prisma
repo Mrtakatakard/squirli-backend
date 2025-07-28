@@ -1,0 +1,393 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String             @id @default(cuid())
+  email             String             @unique
+  password          String
+  firstName         String
+  lastName          String
+  phone             String?
+  dateOfBirth       DateTime?
+  gender            Gender?
+  profileImage      String?
+  financialLevel    FinancialLevel     @default(BEGINNER)
+  monthlyIncome     Decimal?           @db.Decimal(10, 2)
+  monthlyExpenses   Decimal?           @db.Decimal(10, 2)
+  savingsGoal       Decimal?           @db.Decimal(10, 2)
+  subscription      Subscription       @default(FREE)
+  subscriptionStart DateTime?
+  subscriptionEnd   DateTime?
+  language          Language           @default(SPANISH)
+  currency          Currency           @default(DOP)
+  timezone          String             @default("America/Santo_Domingo")
+  notifications     Boolean            @default(true)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  lastLoginAt       DateTime?
+  emailVerified     Boolean            @default(false)
+  emailVerifiedAt   DateTime?
+  // Two-Factor Authentication
+  twoFactorEnabled  Boolean            @default(false)
+  twoFactorSecret   String?
+  twoFactorBackupCodes String[]        @default([])
+  twoFactorEnabledAt DateTime?
+  twoFactorDisabledAt DateTime?
+  financialTests    FinancialTest[]
+  marketplaceOrders MarketplaceOrder[]
+  receipts          Receipt[]
+  userPreferences   UserPreference?
+  userSessions      UserSession[]
+  aiInteractions    AIInteraction[]
+
+  @@map("users")
+}
+
+model UserSession {
+  id           String   @id @default(cuid())
+  userId       String
+  token        String   @unique
+  refreshToken String   @unique
+  deviceInfo   Json?
+  ipAddress    String?
+  userAgent    String?
+  isActive     Boolean  @default(true)
+  expiresAt    DateTime
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_sessions")
+}
+
+model UserPreference {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  theme              Theme    @default(LIGHT)
+  pushNotifications  Boolean  @default(true)
+  emailNotifications Boolean  @default(true)
+  smsNotifications   Boolean  @default(false)
+  weeklyReports      Boolean  @default(true)
+  monthlyReports     Boolean  @default(true)
+  aiRecommendations  Boolean  @default(true)
+  locationServices   Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_preferences")
+}
+
+model Receipt {
+  id              String          @id @default(cuid())
+  userId          String
+  imageUrl        String?
+  merchantName    String
+  amount          Decimal         @db.Decimal(10, 2)
+  currency        Currency        @default(DOP)
+  transactionDate DateTime
+  category        ReceiptCategory
+  subcategory     String?
+  paymentMethod   PaymentMethod?
+  location        String?
+  notes           String?
+  ocrConfidence   Float?
+  ocrRawText      String?
+  ocrProcessed    Boolean         @default(false)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("receipts")
+}
+
+model FinancialTest {
+  id              String         @id @default(cuid())
+  userId          String
+  testVersion     String         @default("v1.0")
+  questions       Json
+  score           Int
+  level           FinancialLevel
+  recommendations Json?
+  completedAt     DateTime       @default(now())
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("financial_tests")
+}
+
+model AIInteraction {
+  id                String           @id @default(cuid())
+  userId            String
+  sessionId         String?
+  interactionType   AIInteractionType
+  userMessage       String
+  aiResponse        String
+  model             String           @default("claude-3-haiku-20240307")
+  tokensUsed        Int?
+  responseTime      Int?             // milliseconds
+  isFinancialQuery  Boolean          @default(false)
+  queryCategory     FinancialQueryCategory?
+  disclaimerShown   Boolean          @default(false)
+  disclaimerVersion String           @default("v1.0")
+  userRating        Int?             // 1-5 stars
+  userFeedback      String?
+  ipAddress         String?
+  userAgent         String?
+  metadata          Json?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  user              User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("ai_interactions")
+}
+
+model MarketplaceProduct {
+  id               String             @id @default(cuid())
+  name             String
+  description      String
+  shortDescription String?
+  category         ProductCategory
+  subcategory      String?
+  price            Decimal            @db.Decimal(10, 2)
+  currency         Currency           @default(DOP)
+  originalPrice    Decimal?           @db.Decimal(10, 2)
+  discount         Int?
+  providerId       String
+  providerName     String
+  providerLogo     String?
+  images           String[]
+  videoUrl         String?
+  duration         String?
+  level            FinancialLevel?
+  features         String[]
+  requirements     String?
+  whatYouWillLearn String?
+  averageRating    Float              @default(0)
+  totalReviews     Int                @default(0)
+  totalSales       Int                @default(0)
+  isActive         Boolean            @default(true)
+  isFeatured       Boolean            @default(false)
+  isPopular        Boolean            @default(false)
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  orders           MarketplaceOrder[]
+  reviews          ProductReview[]
+
+  @@map("marketplace_products")
+}
+
+model MarketplaceOrder {
+  id             String             @id @default(cuid())
+  userId         String
+  productId      String
+  orderNumber    String             @unique
+  amount         Decimal            @db.Decimal(10, 2)
+  currency       Currency           @default(DOP)
+  status         OrderStatus        @default(PENDING)
+  paymentMethod  PaymentMethod
+  paymentGateway PaymentGateway
+  transactionId  String?
+  paymentStatus  PaymentStatus      @default(PENDING)
+  commission     Decimal?           @db.Decimal(10, 2)
+  commissionRate Float?
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  paidAt         DateTime?
+  product        MarketplaceProduct @relation(fields: [productId], references: [id])
+  user           User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("marketplace_orders")
+}
+
+model ProductReview {
+  id         String             @id @default(cuid())
+  productId  String
+  userId     String
+  rating     Int
+  title      String?
+  comment    String?
+  isVerified Boolean            @default(false)
+  createdAt  DateTime           @default(now())
+  updatedAt  DateTime           @updatedAt
+  product    MarketplaceProduct @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_reviews")
+}
+
+model AuditLog {
+  id           String   @id @default(cuid())
+  userId       String
+  action       String
+  resource     String
+  resourceId   String?
+  details      String?  // JSON string
+  ipAddress    String?
+  userAgent    String?
+  success      Boolean
+  errorMessage String?
+  timestamp    DateTime @default(now())
+
+  @@map("audit_logs")
+}
+
+model SecurityLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  details   String?  // JSON string
+  ipAddress String?
+  userAgent String?
+  severity  String   // LOW, MEDIUM, HIGH, CRITICAL
+  timestamp DateTime @default(now())
+
+  @@map("security_logs")
+}
+
+model IPBlacklist {
+  id        String    @id @default(cuid())
+  ipAddress String    @unique
+  reason    String
+  source    String    // MANUAL, AUTOMATIC, SYSTEM
+  details   String?   // JSON string
+  expiresAt DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map("ip_blacklist")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+  PREFER_NOT_TO_SAY
+}
+
+enum FinancialLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum Subscription {
+  FREE
+  PERSONAL
+  ADVANCED
+  FAMILY
+  BUSINESS
+}
+
+enum Language {
+  SPANISH
+  ENGLISH
+  FRENCH
+}
+
+enum Currency {
+  DOP
+  USD
+  EUR
+  MXN
+  COP
+}
+
+enum Theme {
+  LIGHT
+  DARK
+  AUTO
+}
+
+enum ReceiptCategory {
+  FOOD_AND_DRINKS
+  TRANSPORTATION
+  SHOPPING
+  ENTERTAINMENT
+  HEALTHCARE
+  EDUCATION
+  UTILITIES
+  INSURANCE
+  INVESTMENTS
+  SAVINGS
+  OTHER
+}
+
+enum PaymentMethod {
+  CASH
+  CREDIT_CARD
+  DEBIT_CARD
+  BANK_TRANSFER
+  DIGITAL_WALLET
+  CRYPTO
+  OTHER
+}
+
+enum ProductCategory {
+  MENTORING
+  COURSE
+  WORKSHOP
+  INSURANCE
+  TOOL
+  BOOK
+  OTHER
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  REFUNDED
+  COMPLETED
+}
+
+enum PaymentStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  CANCELLED
+  REFUNDED
+}
+
+enum PaymentGateway {
+  STRIPE
+  AZUL
+  CARDNET
+  PAYPAL
+  OTHER
+}
+
+enum AIInteractionType {
+  GENERAL_QUESTION
+  FINANCIAL_ADVICE
+  BUDGET_PLANNING
+  INVESTMENT_ADVICE
+  DEBT_MANAGEMENT
+  SAVINGS_STRATEGY
+  TAX_ADVICE
+  INSURANCE_ADVICE
+  RETIREMENT_PLANNING
+  OTHER
+}
+
+enum FinancialQueryCategory {
+  BUDGETING
+  SAVING
+  INVESTING
+  DEBT
+  TAXES
+  INSURANCE
+  RETIREMENT
+  CREDIT
+  BANKING
+  CRYPTO
+  REAL_ESTATE
+  BUSINESS_FINANCE
+  EDUCATION_FINANCE
+  OTHER
+}

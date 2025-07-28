@@ -1,0 +1,343 @@
+2025-07-27 16:52:03:523 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 16:52:03:523 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 16:52:03:523 [31merror[39m: [31mDecryption failed: Unsupported state or unable to authenticate data[39m
+2025-07-27 16:52:03:523 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 16:52:54:5254 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 16:52:54:5254 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 16:52:54:5254 [31merror[39m: [31mDecryption failed: Unsupported state or unable to authenticate data[39m
+2025-07-27 16:52:54:5254 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:13:47:1347 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:13:49:1349 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:13:49:1349 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:13:49:1349 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:13:49:1349 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:17:1517 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:15:18:1518 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:18:1518 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:18:1518 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:18:1518 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:15:19:1519 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:50:1550 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:15:51:1551 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:52:1552 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:52:1552 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:15:52:1552 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:15:52:1552 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:01:161 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:02:162 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:02:162 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:39:1639 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:16:40:1640 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:16:42:1642 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:16:42:1642 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:17:14:1714 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:17:15:1715 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:17:1717 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:17:17:1717 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:17:41:1741 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:17:42:1742 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:42:1742 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:42:1742 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:42:1742 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:17:43:1743 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:17:44:1744 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:17:44:1744 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:18:08:188 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:18:09:189 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:18:10:1810 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:23:56:2356 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:23:57:2357 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:58:2358 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:58:2358 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:58:2358 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:23:58:2358 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:23:59:2359 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:23:59:2359 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:24:07:247 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:24:08:248 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:09:249 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:24:09:249 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
+2025-07-27 17:24:48:2448 [31merror[39m: [31mError getting user stats: Database connection failed[39m
+2025-07-27 17:24:49:2449 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:49:2449 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:49:2449 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:49:2449 [31merror[39m: [31mDatabase health check failed: [39m
+[31mInvalid `prisma.$queryRaw()` invocation:[39m
+
+
+[31mUser `squirli_user` was denied access on the database `squirli_db.public`[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mDecryption failed: Invalid encrypted data format[39m
+2025-07-27 17:24:50:2450 [31merror[39m: [31mEncryption failed: Invalid key length[39m
+2025-07-27 17:24:51:2451 [31merror[39m: [31mDatabase connection failed: prisma.$connect is not a function[39m
+2025-07-27 17:24:51:2451 [31merror[39m: [31mFailed to initialize IP blacklist cache: Cannot read properties of undefined (reading 'findMany')[39m
